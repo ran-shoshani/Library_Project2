@@ -61,9 +61,21 @@ namespace Library_Project
 
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void SupButton_Click(object sender, EventArgs e)
         {
+            // add sup main form
+        }
 
+        private void AdminButton_Click(object sender, EventArgs e)
+        {
+            AdminUserMainForm objAdminUserMainForm = new AdminUserMainForm();
+            objAdminUserMainForm.ShowDialog();
+        }
+
+        private void UserButton_Click(object sender, EventArgs e)
+        {
+            NormalUserMainForm objNormalUserMainForm = new NormalUserMainForm();
+            objNormalUserMainForm.ShowDialog();
         }
     }
 }

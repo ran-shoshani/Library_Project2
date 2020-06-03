@@ -36,6 +36,9 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.loginFormLabel = new System.Windows.Forms.Label();
+            this.AdminButton = new System.Windows.Forms.Button();
+            this.UserButton = new System.Windows.Forms.Button();
+            this.SupButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // loginButton
@@ -94,7 +97,6 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 5;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textBox2
             // 
@@ -115,12 +117,45 @@
             this.loginFormLabel.TabIndex = 7;
             this.loginFormLabel.Text = "Login Form";
             // 
+            // AdminButton
+            // 
+            this.AdminButton.Location = new System.Drawing.Point(319, 159);
+            this.AdminButton.Name = "AdminButton";
+            this.AdminButton.Size = new System.Drawing.Size(75, 23);
+            this.AdminButton.TabIndex = 8;
+            this.AdminButton.Text = "Admin";
+            this.AdminButton.UseVisualStyleBackColor = true;
+            this.AdminButton.Click += new System.EventHandler(this.AdminButton_Click);
+            // 
+            // UserButton
+            // 
+            this.UserButton.Location = new System.Drawing.Point(319, 188);
+            this.UserButton.Name = "UserButton";
+            this.UserButton.Size = new System.Drawing.Size(75, 23);
+            this.UserButton.TabIndex = 9;
+            this.UserButton.Text = "User";
+            this.UserButton.UseVisualStyleBackColor = true;
+            this.UserButton.Click += new System.EventHandler(this.UserButton_Click);
+            // 
+            // SupButton
+            // 
+            this.SupButton.Location = new System.Drawing.Point(319, 130);
+            this.SupButton.Name = "SupButton";
+            this.SupButton.Size = new System.Drawing.Size(75, 23);
+            this.SupButton.TabIndex = 10;
+            this.SupButton.Text = "Sup";
+            this.SupButton.UseVisualStyleBackColor = true;
+            this.SupButton.Click += new System.EventHandler(this.SupButton_Click);
+            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(370, 256);
+            this.ClientSize = new System.Drawing.Size(411, 253);
+            this.Controls.Add(this.SupButton);
+            this.Controls.Add(this.UserButton);
+            this.Controls.Add(this.AdminButton);
             this.Controls.Add(this.loginFormLabel);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
@@ -148,6 +183,9 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label loginFormLabel;
+        private System.Windows.Forms.Button AdminButton;
+        private System.Windows.Forms.Button UserButton;
+        private System.Windows.Forms.Button SupButton;
     }
 }
 

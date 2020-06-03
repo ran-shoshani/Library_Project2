@@ -16,5 +16,18 @@ namespace Library_Project
         {
             InitializeComponent();
         }
+
+        private void DepartmentMainFormButton_Click(object sender, EventArgs e) // NOT IN USE
+        {
+            DepartmentMainForm objDepartmentMainForm = new DepartmentMainForm();
+            objDepartmentMainForm.ShowDialog();
+
+        }
+
+        private void AuthorMainFormButton(object sender, EventArgs e)
+        {
+            AuthorMainForm objAuthorMainForm = new AuthorMainForm();
+            objAuthorMainForm.ShowDialog();
+        }
     }
 }
